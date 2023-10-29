@@ -5,7 +5,7 @@ import android.view.View
 import androidx.viewpager2.widget.ViewPager2.PageTransformer
 import kotlin.math.abs
 
-class CustomPageTransformer :PageTransformer {
+class CustomPageTransformer : PageTransformer {
     override fun transformPage(page: View, position: Float) {
         val absPosition = abs(position)
 
@@ -28,7 +28,7 @@ class CustomPageTransformer :PageTransformer {
             page.translationX = pageWidth * absPosition
         }
     }
-        }
+}
 
 
 

@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kz.just_code.viewpager.databinding.FragmentSpaceBinding
 
-class SpaceFragment(private val spacePhotos: SpacePhotos?): Fragment() {
-private lateinit var binding: FragmentSpaceBinding
+class SpaceFragment(private val spacePhotos: SpacePhotos?) : Fragment() {
+    private lateinit var binding: FragmentSpaceBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -18,6 +18,7 @@ private lateinit var binding: FragmentSpaceBinding
         binding = FragmentSpaceBinding.inflate(inflater, container, false)
         return binding.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
